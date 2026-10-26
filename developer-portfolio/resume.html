@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejal Rawandhe | Resume</title>
+  <style>
+    :root {
+      --ink: #202938;
+      --muted: #526071;
+      --line: #cbd5e1;
+      --accent: #244a73;
+      --paper: #ffffff;
+      --background: #eef2f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 28px 14px;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+    .resume {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: 42px 52px;
+      background: var(--paper);
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+    }
+
+    header { text-align: center; margin-bottom: 22px; }
+    h1 {
+      margin: 0 0 9px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px 13px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    a { color: var(--accent); text-decoration: underline; overflow-wrap: anywhere; }
+
+    section { margin-top: 19px; }
+    h2 {
+      margin: 0 0 9px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--line);
+      color: var(--accent);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    p { margin: 5px 0; font-size: 12.5px; }
+    .education-row, .project-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .right { text-align: right; white-space: nowrap; color: var(--muted); font-size: 12px; }
+    .item-title { font-weight: 700; font-size: 12.5px; }
+    .subtle { color: var(--muted); }
+    ul { margin: 5px 0 0; padding-left: 20px; font-size: 12.5px; }
+    li { margin: 2px 0; }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3px 35px;
+    }
+    .project { margin-bottom: 12px; }
+    .project p { margin-top: 4px; }
+    .tagline { color: var(--muted); font-size: 11.5px; }
+
+    .actions {
+      width: min(900px, 100%);
+      margin: 0 auto 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .actions button {
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      background: var(--accent);
+      color: white;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .actions button:hover { opacity: 0.9; }
+
+    @media (max-width: 600px) {
+      body { padding: 10px 6px; }
+      .resume { padding: 26px 20px; }
+      h1 { font-size: 27px; }
+      .education-row, .project-heading { display: block; }
+      .right { text-align: left; white-space: normal; }
+      .skills { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { padding: 0; background: white; }
+      .resume { width: 100%; padding: 0; box-shadow: none; }
+      .actions { display: none; }
+      section, .project { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="actions">
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="resume">
+    <header>
+      <h1>Sejal Rawandhe</h1>
+      <div class="contact">
+        <span>+91-6260210751</span>
+        <span>•</span>
+        <a href="mailto:sejalrawandhe91@gmail.com">sejalrawandhe91@gmail.com</a>
+        <span>•</span>
+        <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+        <span>•</span>
+        <a href="#" aria-label="GitHub profile">GitHub</a>
+        <span>•</span>
+        <a href="#" aria-label="LeetCode profile">LeetCode</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Career Objective</h2>
+      <p>Motivated Computer Science and Engineering (AI) student with strong skills in Java, DSA, Python, and Machine Learning. Seeking a Software Development Engineer role to apply problem-solving skills and build efficient software solutions. Eager to learn, innovate, and contribute to impactful real-world projects.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education-row">
+        <div>
+          <div class="item-title">B.Tech Computer Science and Engineering (AI/ML)</div>
+          <p class="subtle">Rungta College of Engineering and Technology, Bhilai</p>
+        </div>
+        <div class="right"><strong>CGPA: 7.71</strong><br>2024–2028</div>
+      </div>
+      <div class="education-row">
+        <div>
+          <div class="item-title">Class XII</div>
+          <p class="subtle">Little Flower Convent School, Betul</p>
+        </div>
+        <div class="right"><strong>78%</strong><br>2024</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>C</li>
+        </ul>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Python</li>
+          <li>NumPy</li>
+          <li>Pandas</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <article class="project">
+        <div class="project-heading">
+          <div class="item-title">AI Farmer Assistant (Great for India)</div>
+          <div class="right">Python, TensorFlow, OpenCV, CNN, Flask, Firebase, Weather API</div>
+        </div>
+        <p>Developed an AI-powered farmer assistant where farmers can upload crop images for automated disease detection. Implemented AI-based recommendations for fertilizers and pesticides, along with weather updates and crop-related tips in local languages. Includes image recognition.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="item-title">Smart EMI Calculator</div>
+          <div class="right">HTML5, CSS3, JavaScript, Responsive Web Design</div>
+        </div>
+        <p>Developed a responsive web-based EMI calculator that enables users to calculate monthly loan EMI, principal amount, total interest, and total repayment based on loan amount, interest rate, and tenure. Added interactive controls for real-time calculations and a loan comparison feature to help users evaluate different loan options.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="item-title">ASCII-to-PGM Image Generator</div>
+          <div class="right">Python 3, File Handling, ASCII Processing, PGM, Pixel/Image Processing</div>
+        </div>
+        <p>Developed a Python-based project that converts an ASCII character sketch into a grayscale PGM (Portable Gray Map) image. Implemented file handling, loops, conditional statements, character-to-pixel conversion, and pixel-based image generation to strengthen core Python and image-processing concepts.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Full-Stack Development – Advanced React / Node.js</li>
+        <li>AWS Cloud Essentials Certificate</li>
+        <li>Oracle AI Agent Foundations Certificate</li>
+        <li>Introduction to Generative AI Studio Certificate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Adobe University Hackathon 2026 – Participated in competitive coding and problem-solving rounds.</li>
+        <li>Bharatiya Antarrashtriya Hackathon 2025 – Participated in a national-level hackathon and collaborated with a team to develop an innovative technology-based solution.</li>
+        <li>GitHub Copilot Dev Days Hackathon 2026 – Participated in the hackathon and collaborated with a team to develop an innovative solution using AI-assisted development.</li>
+        <li>State/National Level Handball and Basketball Player – Represented at state and national-level competitions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <p>Communication • Leadership • Teamwork • Problem Solving • Adaptability • Time Management</p>
+    </section>
+  </main>
+</body>
+</html>
